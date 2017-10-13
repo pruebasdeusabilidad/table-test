@@ -1,0 +1,59 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    User testing
+  </h1>
+  <md-table>
+    <ng-container cdkColumnDef="{{_columns[0]}}">
+      <md-header-cell *cdkHeaderCellDef>Folio</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[1]}}">
+      <md-header-cell *cdkHeaderCellDef>Nombre</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[2]}}">
+      <md-header-cell *cdkHeaderCellDef>Apellido</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[3]}}">
+      <md-header-cell *cdkHeaderCellDef>Email</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[4]}}">
+      <md-header-cell *cdkHeaderCellDef>Teléfono</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[5]}}">
+      <md-header-cell *cdkHeaderCellDef>Moneda</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[6]}}">
+      <md-header-cell *cdkHeaderCellDef>Monto</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[7]}}">
+      <md-header-cell *cdkHeaderCellDef>Fecha</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[8]}}">
+      <md-header-cell *cdkHeaderCellDef>Edad</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[9]}}">
+      <md-header-cell *cdkHeaderCellDef>Idioma</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[10]}}">
+      <md-header-cell *cdkHeaderCellDef>Estado Civil</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <ng-container cdkColumnDef="{{_columns[11]}}">
+      <md-header-cell *cdkHeaderCellDef>Género</md-header-cell>
+      <md-cell *cdkCellDef="let row"></md-cell>
+    </ng-container>
+    <md-header-row *cdkHeaderRowDef="_columns"></md-header-row>
+    <md-row *cdkRowDef="let row; columns: _columns;"></md-row>
+  </md-table>
+</ul>
+
