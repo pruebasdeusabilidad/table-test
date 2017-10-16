@@ -1,58 +1,63 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class="contenedor-principal">
   <h1>
     User testing
   </h1>
-  <md-table #table [dataSource]="data">
-    <ng-container cdkColumnDef="{{_columns[0]}}">
-      <md-header-cell *cdkHeaderCellDef>Folio</md-header-cell>
-      <md-cell *cdkCellDef="let row">{{row.id + 100000}}</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[1]}}">
-      <md-header-cell *cdkHeaderCellDef>Nombre</md-header-cell>
-      <md-cell *cdkCellDef="let row">{{row.name}}</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[2]}}">
-      <md-header-cell *cdkHeaderCellDef>Apellido</md-header-cell>
-      <md-cell *cdkCellDef="let row">{{row.username}}</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[3]}}">
-      <md-header-cell *cdkHeaderCellDef>Email</md-header-cell>
-      <md-cell *cdkCellDef="let row">{{row.email}}</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[4]}}">
-      <md-header-cell *cdkHeaderCellDef>Teléfono</md-header-cell>
-      <md-cell *cdkCellDef="let row">{{row.phone}}</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[5]}}">
-      <md-header-cell *cdkHeaderCellDef>Moneda</md-header-cell>
-      <md-cell *cdkCellDef="let row">CLP</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[6]}}">
-      <md-header-cell *cdkHeaderCellDef>Monto</md-header-cell>
-      <md-cell *cdkCellDef="let row">{{row.address.geo.lng}}</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[7]}}">
-      <md-header-cell *cdkHeaderCellDef>Fecha</md-header-cell>
-      <md-cell *cdkCellDef="let row">13/10/2017</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[8]}}">
-      <md-header-cell *cdkHeaderCellDef>Edad</md-header-cell>
-      <md-cell *cdkCellDef="let row">{{row.id * 4.5 | number:'1.0-0'}}</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[9]}}">
-      <md-header-cell *cdkHeaderCellDef>Idioma</md-header-cell>
-      <md-cell *cdkCellDef="let row">Español</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[10]}}">
-      <md-header-cell *cdkHeaderCellDef>Estado Civil</md-header-cell>
-      <md-cell *cdkCellDef="let row">Soltero</md-cell>
-    </ng-container>
-    <ng-container cdkColumnDef="{{_columns[11]}}">
-      <md-header-cell *cdkHeaderCellDef>Género</md-header-cell>
-      <md-cell *cdkCellDef="let row">Hetero Curioso</md-cell>
-    </ng-container>
-    <md-header-row *cdkHeaderRowDef="_columns"></md-header-row>
-    <md-row *cdkRowDef="let row; columns: _columns;"></md-row>
-  </md-table>
+  <div class="contenido">
+    <md-table #table [dataSource]="data">
+      <ng-container cdkColumnDef="{{_columns[0]}}">
+        <md-header-cell *cdkHeaderCellDef>Folio</md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row.id + 100000}}</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[1]}}">
+        <md-header-cell *cdkHeaderCellDef>Nombre</md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row.name}}</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[2]}}">
+        <md-header-cell *cdkHeaderCellDef>Apellido</md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row.username}}</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[3]}}">
+        <md-header-cell *cdkHeaderCellDef>Email</md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row.email}}</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[4]}}">
+        <md-header-cell *cdkHeaderCellDef>Teléfono</md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row.phone}}</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[5]}}">
+        <md-header-cell *cdkHeaderCellDef>Moneda</md-header-cell>
+        <md-cell *cdkCellDef="let row">CLP</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[6]}}">
+        <md-header-cell *cdkHeaderCellDef>Monto</md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row.address.geo.lng}}</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[7]}}">
+        <md-header-cell *cdkHeaderCellDef>Fecha</md-header-cell>
+        <md-cell *cdkCellDef="let row">13/10/2017</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[8]}}">
+        <md-header-cell *cdkHeaderCellDef>Edad</md-header-cell>
+        <md-cell *cdkCellDef="let row">{{row.id * 4.5 | number:'1.0-0'}}</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[9]}}">
+        <md-header-cell *cdkHeaderCellDef>Idioma</md-header-cell>
+        <md-cell *cdkCellDef="let row">Español</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[10]}}">
+        <md-header-cell *cdkHeaderCellDef>Estado Civil</md-header-cell>
+        <md-cell *cdkCellDef="let row">Soltero</md-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="{{_columns[11]}}">
+        <md-header-cell *cdkHeaderCellDef>Género</md-header-cell>
+        <md-cell *cdkCellDef="let row">NA</md-cell>
+      </ng-container>
+      <md-header-row *cdkHeaderRowDef="_columns"></md-header-row>
+      <md-row *cdkRowDef="let row; columns: _columns;"></md-row>
+    </md-table>
+    <!--<md-paginator #paginator [length]="dataTable.filteredData.length" [pageIndex]="0" [pageSize]="10" [pageSizeOptions]="[10, 25, 50]">
+    </md-paginator>-->
+  </div>
+</div>
 

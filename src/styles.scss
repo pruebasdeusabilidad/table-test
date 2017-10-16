@@ -1,0 +1,161 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/*Colores*/
+$azul: #2772CC;
+$verdeOscuro: #28892B;
+$verde: #53A155;
+$verdeClaro: #7EB880;
+$rojo: #F13D47;
+$negro: #000000;
+$blanco: #FFFFFF;
+$grisDisabled: #E2E8EA;
+$grisDisabled-texto: #BBC5CA;
+$grisClaro-texto: #98A8AF;
+$grisAzulado: #546E7A;
+$verdeClaro: #D4E7D5;
+$verdeClaro-pressed: #A9D0AA;
+
+.contenedor-principal {
+    text-align: center;
+    font-family: 'Roboto';
+}
+.contenido {
+    margin: 0 auto;
+    max-width: 1032px;
+    padding: 20px 15px;
+}
+
+// TABLAS
+
+/*Estilos tabla guideline*/
+.contenedor-tablaBci {
+  max-width: 1160px;
+  margin: 48px auto;
+  background-color: $blanco;
+  padding: 0 !important;
+  h2 {
+    height: 64px;
+    font-size: 20px;
+    text-align: left;
+    color: $grisAzulado;
+    font-weight: normal;
+    padding-left: 24px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  md-table {
+    border-bottom: 1px solid #E2E8EA;
+    overflow: visible;
+    max-height: none;
+    ng-container {
+      .info-responsive {
+        display: none;
+      }
+      md-cell {
+        color: rgb(135, 153, 162); 
+      }
+      md-cell.info-expandible {
+        color: $grisAzulado;
+        md-expansion-panel {
+          div>p {
+            span.font-negrita {
+              font-weight: 200;
+            }
+          }
+        }
+      }
+    }
+    md-header-row {
+      height: 56px;
+      border: 0;
+    }
+    md-row {
+      height: 48px;
+      border-bottom-style: unset;
+      border-top: 1px solid $grisDisabled;
+      md-cell.mat-cell {
+        color: $grisAzulado;
+      }
+    }
+  }
+  /*Paginador*/ //nuevo trini
+  md-paginator {
+    height: 56px;
+    button.mat-icon-button {
+      color: $azul;
+      span.mat-button-wrapper {
+        color: $verde;
+      }
+    }
+    /*label paginador*/
+    .mat-paginator-page-size{
+      max-width: 200px;
+    }
+    .mat-paginator-page-size-select .mat-select-trigger{
+      margin-top: -20px;
+    }
+    /*flecha select*/
+    .mat-select-arrow{
+      color: $azul !important;
+    }
+    /*Numeros (1-2 of 2)*/
+    .mat-paginator-range-label {
+      margin: 0 4px;
+    }
+    /*Numeros (1-2 of 2)*/
+    .mat-paginator-range-label {
+      margin: 0 4px;
+    }
+    /*flecha derecha e izquierda*/
+    .mat-paginator-increment, .mat-paginator-decrement {
+      border-top: 2px solid $azul !important;
+      border-right: 2px solid $azul !important;
+    }
+  }
+}
+/*Estilos tabla - encabezados*/
+md-header-cell.mat-header-cell {
+  color: $grisAzulado;
+  font-weight: 600;
+}
+/*Estilos tabla - paginator*/
+md-paginator {
+  height: 56px;
+  button.mat-icon-button {
+    color: $azul;
+    span.mat-button-wrapper {
+      color: $verde;
+    }
+  }
+  /*label paginador*/
+  .mat-paginator-page-size-label{
+    width: 380px !important;
+  }
+  /*select paginador*/
+  .mat-paginator-page-size-select .mat-select-trigger{
+    margin-top: -20px;
+  }
+  /*flecha select*/
+  .mat-select-arrow{
+    color: $azul !important;
+  }
+  /*flecha derecha e izquierda*/
+  .mat-paginator-increment, .mat-paginator-decrement {
+    border-top: 2px solid $azul !important;
+    border-right: 2px solid $azul !important;
+  }
+}
+/*Estilos tabla - sorter*/
+.mat-sort-header-container {
+  .mat-sort-header-button {
+    order: 3;
+  }
+  .mat-sort-header-arrow {
+    color: $azul;
+    order: 0;
+    margin: 5px;
+  }
+}
