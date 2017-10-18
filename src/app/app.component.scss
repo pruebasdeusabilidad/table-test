@@ -1,0 +1,72 @@
+.contenido md-table {
+    overflow-x: scroll;
+}
+.mat-header-row, .mat-row {
+    padding: 0;
+}
+md-cell.mat-cell, md-header-cell.mat-header-cell {
+    text-align: left;
+}
+.col-folio {
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    position: fixed;
+    background-color: white;
+}
+.col-nombre {
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+    margin-left: 100px;
+}
+.col-apellido {
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+}
+.col-email {
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+}
+.col-telefono {
+    width: 180px;
+    max-width: 180px;
+    min-width: 180px;
+}
+.col-moneda {
+    width: 80px;
+    max-width: 80px;
+    min-width: 80px;
+}
+.col-monto {
+    width: 110px;
+    max-width: 110px;
+    min-width: 110px;
+}
+.col-fecha {
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+}
+.col-edad {
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+}
+.col-idioma {
+    width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+}
+.col-estCivil {
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+}
+.col-genero {
+    width: 130px;
+    max-width: 130px;
+    min-width: 130px;
+}
